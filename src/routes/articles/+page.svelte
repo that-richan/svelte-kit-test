@@ -4,6 +4,8 @@
 	export let data: PageServerData;
 </script>
 
+<a class="text-green-700" href="/articles/add">Add article</a>
+
 <h2>List of articles</h2>
 <ul class="flex flex-col gap-2">
 	{#each data.articles as article}
