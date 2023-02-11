@@ -1,8 +1,8 @@
 import { error } from "@sveltejs/kit";
 import { articlesMock } from "../../../mock/article.mock";
-import type { PageLoad } from "./$types";
+import type { PageServerLoad } from "./$types";
 
-export const load: PageLoad = ({ params }) => {
+export const load: PageServerLoad = ({ params }) => {
 	const articleId = parseInt(params.id);
 	const article = articlesMock.find(article => article.id === articleId);
 
@@ -12,5 +12,5 @@ export const load: PageLoad = ({ params }) => {
 
 	return {
 		article,
-	}
+	};
 };

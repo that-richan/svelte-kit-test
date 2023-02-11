@@ -1,8 +1,15 @@
 <script lang="ts">
-	import type { PageData } from "./$types";
+	import type { PageServerData } from "./$types";
 
-	export let data: PageData;
+	export let data: PageServerData;
 </script>
 
-<h3>{data.article.name}</h3>
+<a
+	class="hover:text-blue-400 underline"
+	href="/articles"
+>
+	Back
+</a>
+
+<h2>{data.article.name}</h2>
 <p>{data.article.description}</p>
