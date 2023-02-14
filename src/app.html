@@ -2,11 +2,12 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<title>Svelte Kit Test</title>
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
+	<body data-sveltekit-preload-data="hover" class="w-screen min-h-screen flex flex-col">
+		<div style="display: contents;">%sveltekit.body%</div>
 	</body>
 </html>
